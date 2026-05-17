@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Gráfico - Acrialbi</title>
+    <link rel="icon" type="image/png" href="assets/logos/Untitled (5) (1).png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- WhatsApp Welcome Bubble -->
+    <div class="whatsapp-bubble" id="whatsappBubble">
+        <span data-i18n="wa_bubble">Olá! Precisa de um orçamento para o seu projeto? Fale connosco!</span>
+    </div>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">ACRIALBI</a>
+            <ul class="nav-links">
+                <li><a href="index.html#home" data-i18n="nav_home">Início</a></li>
+                <li><a href="index.html#services" data-i18n="nav_services">Serviços</a></li>
+                <li><a href="index.html#ideias" data-i18n="nav_ideias">O Seu Projeto</a></li>
+                <li><a href="index.html#team" data-i18n="nav_team">Equipa</a></li>
+                <li><a href="index.html#contact" data-i18n="nav_contact">Contactos</a></li>
+                <li class="nav-extra">
+                    <button id="darkModeToggle" class="nav-btn"><i class="fa-solid fa-moon"></i></button>
+                    <button class="nav-btn">PT</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="breadcrumbs">
+        <a href="index.html" data-i18n="breadcrumb_home">Início</a> > <span data-i18n="design_title">Design Gráfico</span>
+    </div>
+
+    <section class="hero-small">
+        <div class="hero-content">
+            <h1 data-i18n="design_title">Design Gráfico</h1>
+        </div>
+    </section>
+
+    <section>
+        <div class="service-details">
+            <p data-i18n="design_desc1">O <strong>Design Gráfico</strong> é a base de uma marca forte. Na Acrialbi, criamos identidades visuais que comunicam a essência do seu negócio de forma clara e atrativa.</p>
+            <p data-i18n="design_desc2">A nossa equipa desenvolve <strong>logótipos memoráveis, identidades visuais completas (branding) e materiais editoriais como catálogos</strong> impressionantes que ajudam a sua empresa a destacar-se da concorrência com profissionalismo e estética.</p>
+        </div>
+
+        <h2 class="section-title" data-i18n="design_gallery">Galeria de Design</h2>
+        <div class="gallery-grid">
+            <img src="assets/logos/4299ce52-6d33-43dc-866d-b617822c50e8 (1) (1).png" alt="Logo Design" class="gallery-item">
+            <img src="assets/logos/Untitled (5) (1).png" alt="Logo Design" class="gallery-item">
+            <img src="assets/logos/image.png" alt="Logo Design" class="gallery-item">
+            <img src="assets/catalogos/Untitled (34).png" alt="Catálogo" class="gallery-item">
+            <img src="assets/catalogos/Untitled (35).png" alt="Catálogo" class="gallery-item">
+        </div>
+        
+        <div style="text-align: center; margin-top: 4rem;">
+            <a href="index.html#ideias" class="btn btn-pulse" data-i18n="prod_btn">Pedir Orçamento para esta área</a>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4 data-i18n="hero_title">Acrialbi</h4>
+                <p data-i18n="footer_desc">Soluções à medida do seu negócio. Transformamos ideias em realidade com a nossa equipa especializada.</p>
+            </div>
+            <div class="footer-section">
+                <h4 data-i18n="footer_contact">Contactos</h4>
+                <p><i class="fa-solid fa-envelope"></i> geral@acrialbi.pt</p>
+                <p><i class="fa-solid fa-phone"></i> +351 272 000 000</p>
+            </div>
+            <div class="footer-section">
+                <h4 data-i18n="footer_location">Localização</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Castelo Branco, Portugal</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Acrialbi. <span data-i18n="footer_rights">Todos os direitos reservados.</span></p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/351123456789" class="whatsapp-float" target="_blank" title="Contacte-nos no WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

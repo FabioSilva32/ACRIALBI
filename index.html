@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acrialbi - Soluções à medida do seu negócio</title>
+    <link rel="icon" type="image/png" href="assets/logos/Untitled (5) (1).png">
+    <meta name="description" content="Produção e fabrico à medida, gravação laser, comunicação visual e design gráfico pela Acrialbi.">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<body>
+    <!-- WhatsApp Welcome Bubble -->
+    <div class="whatsapp-bubble" id="whatsappBubble">
+        <span data-i18n="wa_bubble">Olá! Precisa de um orçamento para o seu projeto? Fale connosco!</span>
+    </div>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <div id="particles-js"></div>
+
+    <!-- Header / Navbar -->
+    <header>
+        <nav>
+            <a href="#" class="logo">ACRIALBI</a>
+            <ul class="nav-links">
+                <li><a href="#home" data-i18n="nav_home">Início</a></li>
+                <li><a href="#services" data-i18n="nav_services">Serviços</a></li>
+                <li><a href="#ideias" data-i18n="nav_ideias">O Seu Projeto</a></li>
+                <li><a href="#team" data-i18n="nav_team">Equipa</a></li>
+                <li><a href="#testimonials" data-i18n="nav_testimonials">Testemunhos</a></li>
+                <li><a href="#faq" data-i18n="nav_faq">FAQ</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">Contactos</a></li>
+                <li class="nav-extra">
+                    <button id="darkModeToggle" class="nav-btn"><i class="fa-solid fa-moon"></i></button>
+                    <button class="nav-btn">PT</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 data-i18n="hero_title">Acrialbi</h1>
+            <p data-i18n="hero_subtitle">Soluções à medida do seu negócio</p>
+            <a href="#services" class="btn btn-pulse" data-i18n="hero_btn">Descubra Mais</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2 class="section-title" data-i18n="services_title">Os Nossos Serviços</h2>
+        <div class="services-grid">
+            <!-- Service 1 -->
+            <a href="producao.html" class="service-card-link">
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('assets/vitrinas/Untitled (27).png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="service-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                    <h3 data-i18n="service1_title">Produção e Fabrico à Medida</h3>
+                    <p data-i18n="service1_text">Trabalhamos com Acrílico, PVC e Madeira. Produzimos vitrinas, troféus e peças exclusivas para as suas necessidades.</p>
+                </div>
+            </a>
+            
+            <!-- Service 2 -->
+            <a href="gravacao.html" class="service-card-link">
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('assets/gravacao_laser/Untitled (21).png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="service-icon"><i class="fa-solid fa-burst"></i></div>
+                    <h3 data-i18n="service2_title">Gravação Laser</h3>
+                    <p data-i18n="service2_text">Gravações de alta precisão com atenção a detalhes em texto e imagens em diversos materiais resistentes.</p>
+                </div>
+            </a>
+
+            <!-- Service 3 -->
+            <a href="comunicacao.html" class="service-card-link">
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('assets/decoracao_de_viaturas/Untitled (30).png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="service-icon"><i class="fa-solid fa-car-side"></i></div>
+                    <h3 data-i18n="service3_title">Publicidade e Comunicação Visual</h3>
+                    <p data-i18n="service3_text">Destaque a sua marca com decoração de viaturas, sinalética profissional, camisolas e t-shirts personalizadas.</p>
+                </div>
+            </a>
+
+            <!-- Service 4 -->
+            <a href="design.html" class="service-card-link">
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('assets/logos/Untitled (5) (1).png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="service-icon"><i class="fa-solid fa-pen-nib"></i></div>
+                    <h3 data-i18n="service4_title">Design Gráfico</h3>
+                    <p data-i18n="service4_text">Criação de logótipos memoráveis, identidade visual corporativa e design de catálogos impressionantes.</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Idea Form Section -->
+    <section id="ideias" class="idea-section">
+        <h2 class="section-title" data-i18n="idea_title">Ideias para um futuro projeto</h2>
+        <form id="ideaForm" action="https://formsubmit.co/geral@acrialbi.pt" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="Nova Ideia de Projeto - Acrialbi">
+            <input type="text" name="Nome" id="name" data-i18n="idea_name" placeholder="O seu nome" required>
+            <input type="tel" name="Telefone" id="phone" data-i18n="idea_phone" placeholder="O seu telefone" required>
+            <input type="email" name="Email" id="email" data-i18n="idea_email" placeholder="O seu email" required>
+            <textarea name="Mensagem" id="message" rows="4" data-i18n="idea_message" placeholder="Descreva a sua ideia em algumas palavras... (Opcional)"></textarea>
+            <button type="submit" class="btn" data-i18n="idea_btn">Enviar Ideia</button>
+        </form>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team">
+        <h2 class="section-title" data-i18n="team_title">A Nossa Equipa</h2>
+        <div class="team-grid">
+            <div class="team-card" style="cursor: pointer;" data-name="Simão Pereira" data-image="assets/fts_equipa/20.png" data-role="Diretor Criativo e Designer" data-profile="22 anos, natural do Fundão, licenciado em Design Multimédia pela Universidade da Beira Interior" data-experience="Colaborou com a Beira Criativa e a MediaLab Covilhã, desenvolvendo projetos de identidade visual e conteúdos digitais">
+                <div class="team-img" style="background-image: url('assets/fts_equipa/20.png'); background-size: cover; background-position: center;">
+                </div>
+                <h3>Simão</h3>
+            </div>
+            <div class="team-card" style="cursor: pointer;" data-name="Patrícia Fazendeiro" data-image="assets/fts_equipa/22.png" data-role="Gestora de Marketing e Comunicação" data-profile="22 anos, natural do Fundão, licenciada em Marketing pela Universidade da Beira Interior" data-experience="Trabalhou com a Digital Beira e a Creative Ads, com foco em redes sociais e estratégias de comunicação">
+                <div class="team-img" style="background-image: url('assets/fts_equipa/22.png'); background-size: cover; background-position: center;">
+                </div>
+                <h3>Patrícia</h3>
+            </div>
+            <div class="team-card" style="cursor: pointer;" data-name="Francisco Félix" data-image="assets/fts_equipa/24.png" data-role="Técnico de Produção e Operações" data-profile="21 anos, natural de Castelo Branco, licenciado em Engenharia e Gestão Industrial pela Universidade da Beira Interior" data-experience="Colaborou com a TecnoLaser e a PrintSolutions, adquirindo experiência em processos produtivos e tecnologias como CNC e corte laser">
+                <div class="team-img" style="background-image: url('assets/fts_equipa/24.png'); background-size: cover; background-position: center;">
+                </div>
+                <h3>Francisco</h3>
+            </div>
+            <div class="team-card" style="cursor: pointer;" data-name="Rodrigo Santos" data-image="assets/fts_equipa/26.png" data-role="Diretor Financeiro, Estratégico e Comercial" data-profile="22 anos, natural de Castelo Branco, licenciado em Gestão pela Universidade da Beira Interior" data-experience="Trabalhou com a MarketPro e a Business Connect, com foco em gestão, estratégia e área comercial">
+                <div class="team-img" style="background-image: url('assets/fts_equipa/26.png'); background-size: cover; background-position: center;">
+                </div>
+                <h3>Rodrigo</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <h2 class="section-title" data-i18n="testimonials_title">O que dizem os nossos clientes</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <i class="fa-solid fa-quote-right quote-icon"></i>
+                <p class="testimonial-text">"Trabalho impecável e com muita atenção aos detalhes. O troféu em acrílico que encomendámos superou as expectativas!"</p>
+                <div class="testimonial-author">
+                    <div class="author-img"></div>
+                    <div class="author-info">
+                        <h4>Carlos Ferreira</h4>
+                        <p>Diretor Geral, Tech Solutions</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <i class="fa-solid fa-quote-right quote-icon"></i>
+                <p class="testimonial-text">"A decoração das nossas viaturas ficou fantástica. Rapidez e profissionalismo exemplares."</p>
+                <div class="testimonial-author">
+                    <div class="author-img"></div>
+                    <div class="author-info">
+                        <h4>Ana Rodrigues</h4>
+                        <p>Proprietária, Fresh Express</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <i class="fa-solid fa-quote-right quote-icon"></i>
+                <p class="testimonial-text">"Excelente atendimento e qualidade nos logótipos criados. Recomendo vivamente a Acrialbi."</p>
+                <div class="testimonial-author">
+                    <div class="author-img"></div>
+                    <div class="author-info">
+                        <h4>José Mendes</h4>
+                        <p>Marketing Manager, Imobiliária Plus</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <h2 class="section-title" data-i18n="faq_title">Perguntas Frequentes</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    Qual é o prazo médio de produção?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>O prazo varia consoante a complexidade do projeto, mas em média entregamos entre 3 a 7 dias úteis após a aprovação do design final.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    Trabalham com que materiais?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Trabalhamos principalmente com Acrílico, PVC, Madeira (MDF e contraplacado), Alumínio e diversos materiais têxteis para personalização.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    Fazem envios para todo o país?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Sim, enviamos para todo o Portugal Continental e Ilhas através de transportadora especializada para garantir que as peças chegam em perfeitas condições.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h3 class="stat-number" data-target="500">0</h3>
+                <p data-i18n="stats_projects">Projetos Concluídos</p>
+            </div>
+            <div class="stat-item">
+                <h3 class="stat-number" data-target="200">0</h3>
+                <p data-i18n="stats_clients">Clientes Felizes</p>
+            </div>
+            <div class="stat-item">
+                <h3 class="stat-number" data-target="10">0</h3>
+                <p data-i18n="stats_years">Anos de Experiência</p>
+            </div>
+            <div class="stat-item">
+                <h3 class="stat-number" data-target="100">0</h3>
+                <p data-i18n="stats_quality">Qualidade Garantida %</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Timeline -->
+    <section class="timeline-section">
+        <h2 class="section-title" data-i18n="timeline_title">Do Conceito à Realidade</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-number">01</div>
+                    <h3 data-i18n="tl1_title">Conceito e Ideia</h3>
+                    <p data-i18n="tl1_text">Partilhamos a sua visão e analisamos as necessidades específicas do seu projeto.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-number">02</div>
+                    <h3 data-i18n="tl2_title">Design e Prototipagem</h3>
+                    <p data-i18n="tl2_text">Criamos modelos digitais e protótipos para garantir que tudo está perfeito.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-number">03</div>
+                    <h3 data-i18n="tl3_title">Produção de Precisão</h3>
+                    <p data-i18n="tl3_text">Utilizamos tecnologia de ponta para fabricar as suas peças com rigor.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-number">04</div>
+                    <h3 data-i18n="tl4_title">Entrega Final</h3>
+                    <p data-i18n="tl4_text">O seu projeto ganha vida e é entregue com os mais altos padrões de qualidade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Modal -->
+    <div id="teamModal" class="team-modal">
+        <div class="team-modal-content">
+            <span class="team-modal-close">&times;</span>
+            <div class="team-modal-header">
+                <h2 id="modalName">Nome</h2>
+                <div id="modalImage" class="team-modal-img"></div>
+            </div>
+            <div class="team-modal-body">
+                <div class="info-row">
+                    <span class="info-label">FUNÇÃO:</span>
+                    <span id="modalRole"></span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">PERFIL:</span>
+                    <span id="modalProfile"></span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">EXPERIÊNCIA:</span>
+                    <span id="modalExperience"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4 data-i18n="hero_title">Acrialbi</h4>
+                <p data-i18n="footer_desc">Soluções à medida do seu negócio. Transformamos ideias em realidade com a nossa equipa especializada.</p>
+                <div class="social-links" style="margin-top: 1rem; display: flex; gap: 15px;">
+                    <a href="https://www.facebook.com/profile.php?id=61577477955955" target="_blank" style="color: var(--white); font-size: 1.8rem; transition: var(--transition);" onmouseover="this.style.color='var(--accent-color)'" onmouseout="this.style.color='var(--white)'"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/acrialbe/" target="_blank" style="color: var(--white); font-size: 1.8rem; transition: var(--transition);" onmouseover="this.style.color='var(--accent-color)'" onmouseout="this.style.color='var(--white)'"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4 data-i18n="footer_contact">Contactos</h4>
+                <p><i class="fa-solid fa-envelope"></i> geral@acrialbi.pt</p>
+                <p><i class="fa-solid fa-phone"></i> +351 272 000 000</p>
+            </div>
+            <div class="footer-section">
+                <h4 data-i18n="footer_location">Localização</h4>
+                <p><i class="fa-solid fa-location-dot"></i> <a href="https://www.google.com/maps/search/?api=1&query=Acrialbi+Castelo+Branco+Portugal" target="_blank" style="color: inherit; text-decoration: none;">Castelo Branco, Portugal</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Acrialbi. <span data-i18n="footer_rights">Todos os direitos reservados.</span></p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/351123456789" class="whatsapp-float btn-pulse" target="_blank" title="Contacte-nos no WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS('particles-js', {
+            "particles": {
+                "number": { "value": 40, "density": { "enable": true, "value_area": 800 } },
+                "color": { "value": "#3498db" },
+                "shape": { "type": "circle" },
+                "opacity": { "value": 0.2, "random": false },
+                "size": { "value": 3, "random": true },
+                "line_linked": { "enable": true, "distance": 150, "color": "#3498db", "opacity": 0.1, "width": 1 },
+                "move": { "enable": true, "speed": 1, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": { "onhover": { "enable": false }, "onclick": { "enable": true, "mode": "push" }, "resize": true }
+            },
+            "retina_detect": true
+        });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>
